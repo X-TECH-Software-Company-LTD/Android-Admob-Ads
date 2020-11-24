@@ -35,7 +35,7 @@ FrameLayout fl=new FrameLayout(this);
 setContentView(ads.showBanner(fl,"LEADERBOARD")); // use with any view , it returns frameLayout
 
 //Available                         Adsizes
-//320x50	                          BANNER              (Legacy)
+//320x50	                        BANNER              (Legacy)
 //320x100	                          LARGE_BANNER        
 //300x250	                          MEDIUM_RECTANGLE    (most visible)
 //468x60	                          FULL_BANNER     
