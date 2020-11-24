@@ -44,14 +44,14 @@ Banner Sizes
 2 - Show Banner (standard)
 ```
 FrameLayout fl=new FrameLayout(this);
-setContentView(ads.showBanner(fl,"LEADERBOARD")); // use with any view , it returns frameLayout
+setContentView(ads.showBanner(fl,"ca-app-pub-3940256099942544/6300978111","LEADERBOARD")); // use with any view , it returns frameLayout
 
 ```
 
 3 - Show Banner with Callback Events (advanced)
 ```
 FrameLayout fl=new FrameLayout(this);
-setContentView(ads.showBannerPro(fl, "ADAPTIVE", new bannerAdListener() {
+setContentView(ads.showBannerPro(fl,"ca-app-pub-3940256099942544/6300978111", "ADAPTIVE", new bannerAdListener() {
             @Override
             public void onAdLoaded() {
                 Log.d("xTechLod","onAdLoaded");
