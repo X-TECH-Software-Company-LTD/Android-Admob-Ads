@@ -48,7 +48,7 @@ setContentView(ads.showBanner(fl,"ca-app-pub-3940256099942544/6300978111","LEADE
 
 ```
 
-3 - Show Banner with Callback Events (advanced)
+3 - Show Banner with Event Listener (advanced)
 ```
 FrameLayout fl=new FrameLayout(this);
 setContentView(ads.showBannerPro(fl,"ca-app-pub-3940256099942544/6300978111", "ADAPTIVE", new bannerAdListener() {
