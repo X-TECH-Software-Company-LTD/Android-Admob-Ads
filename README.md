@@ -12,3 +12,4 @@ on app gradle
   android:name="com.google.android.gms.ads.APPLICATION_ID"
   android:value="ca-app-pub-3940256099942544~3347511713"/>
 ```
+replace with your Application ID
