@@ -29,11 +29,8 @@ xAdmobAds ads = new xAdmobAds(this);
 ads.init();
 ```
 
-2 - Show Banner 
+Banner Sizes
 ```
-FrameLayout fl=new FrameLayout(this);
-setContentView(ads.showBanner(fl,"LEADERBOARD")); // use with any view , it returns frameLayout
-
 //Available                         Adsizes
 //320x50	                    BANNER              (Legacy)
 //320x100	                    LARGE_BANNER        
@@ -42,4 +39,47 @@ setContentView(ads.showBanner(fl,"LEADERBOARD")); // use with any view , it retu
 //728x90	                    LEADERBOARD   
 //Screen                            SMART_BANNER        (Popular)
 //Provided width x Adaptive height  ADAPTIVE            (Trending)
+```
+
+2 - Show Banner (standard)
+```
+FrameLayout fl=new FrameLayout(this);
+setContentView(ads.showBanner(fl,"LEADERBOARD")); // use with any view , it returns frameLayout
+
+```
+
+3 - Show Banner with Callback Events (advanced)
+```
+FrameLayout fl=new FrameLayout(this);
+setContentView(ads.showBannerPro(fl, "ADAPTIVE", new bannerAdListener() {
+            @Override
+            public void onAdLoaded() {
+                Log.d("xTechLod","onAdLoaded");
+            }
+
+            @Override
+            public void onAdFailedToLoad(Object adError) {
+                Log.d("xTechLod","onAdFailedToLoad");
+            }
+
+            @Override
+            public void onAdOpened() {
+                Log.d("xTechLod","onAdOpened");
+            }
+
+            @Override
+            public void onAdClicked() {
+                Log.d("xTechLod","onAdClicked");
+            }
+
+            @Override
+            public void onAdLeftApplication() {
+                Log.d("xTechLod","onAdLeftApplication");
+            }
+
+            @Override
+            public void onAdClosed() {
+                Log.d("xTechLod","onAdClosed");
+            }
+        }));
 ```
