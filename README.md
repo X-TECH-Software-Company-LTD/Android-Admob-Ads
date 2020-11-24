@@ -123,3 +123,29 @@ ads.showIntAdPro("ca-app-pub-3940256099942544/1033173712", new adListener() {
     Log.d("xTechLog","onAdClosed");
   }
 ```
+
+6 - Show Rewarded Ads 
+
+```
+ads.showRewardedAd("ca-app-pub-3940256099942544/5224354917", new rewardAdListener() {
+            @Override
+            public void onRewardedAdOpened() {
+
+            }
+
+            @Override
+            public void onRewardedAdClosed() {
+
+            }
+
+            @Override
+            public void onUserEarnedReward(Object rewardItem) {
+
+            }
+
+            @Override
+            public void onRewardedAdFailedToShow(Object adError) {
+
+            }
+        });
+```
