@@ -54,32 +54,72 @@ FrameLayout fl=new FrameLayout(this);
 setContentView(ads.showBannerPro(fl,"ca-app-pub-3940256099942544/6300978111", "ADAPTIVE", new bannerAdListener() {
   @Override
   public void onAdLoaded() {
-    Log.d("xTechLod","onAdLoaded");
+    Log.d("xTechLog","onAdLoaded");
   }
 
   @Override
   public void onAdFailedToLoad(Object adError) {
-    Log.d("xTechLod","onAdFailedToLoad");
+    Log.d("xTechLog","onAdFailedToLoad");
   }
 
   @Override
   public void onAdOpened() {
-    Log.d("xTechLod","onAdOpened");
+    Log.d("xTechLog","onAdOpened");
   }
 
   @Override
   public void onAdClicked() {
-    Log.d("xTechLod","onAdClicked");
+    Log.d("xTechLog","onAdClicked");
   }
 
   @Override
   public void onAdLeftApplication() {
-    Log.d("xTechLod","onAdLeftApplication");
+    Log.d("xTechLog","onAdLeftApplication");
   }
 
   @Override
   public void onAdClosed() {
-    Log.d("xTechLod","onAdClosed");
+    Log.d("xTechLog","onAdClosed");
   }
 }));
+```
+
+4 - Show Interstitial Ad (standard)
+
+```
+ads.showIntAd("ca-app-pub-3940256099942544/1033173712"); // replace with you Ad ID
+```
+
+5 - Show Interstitial Ad with Event Listener (Advanced)
+```
+ads.showIntAdPro("ca-app-pub-3940256099942544/1033173712", new adListener() {
+  @Override
+  public void onAdLoaded() {
+    Log.d("xTechLog","onAdLoaded");
+  }
+
+  @Override
+  public void onAdFailedToLoad(Object adError) {
+    Log.d("xTechLog","onAdFailedToLoad");
+  }
+
+  @Override
+  public void onAdOpened() {
+    Log.d("xTechLog","onAdOpened");
+  }
+
+  @Override
+  public void onAdClicked() {
+    Log.d("xTechLog","onAdClicked");
+  }
+
+  @Override
+  public void onAdLeftApplication() {
+    Log.d("xTechLog","onAdLeftApplication");
+  }
+
+  @Override
+  public void onAdClosed() {
+    Log.d("xTechLog","onAdClosed");
+  }
 ```
