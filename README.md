@@ -40,5 +40,5 @@ setContentView(ads.showBanner(fl,"LEADERBOARD")); // use with any view , it retu
 //300x250	MEDIUM_RECTANGLE
 //468x60	FULL_BANNER
 //728x90	LEADERBOARD
-//Screen SMART_BANNER
+//Screen  SMART_BANNER
 ```
