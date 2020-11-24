@@ -36,10 +36,10 @@ setContentView(ads.showBanner(fl,"LEADERBOARD")); // use with any view , it retu
 
 //Available                         Adsizes
 //320x50	                    BANNER              (Legacy)
-//320x100	                   LARGE_BANNER        
-//300x250	                  MEDIUM_RECTANGLE    (most visible)
-//468x60	                  FULL_BANNER     
-//728x90	                  LEADERBOARD   
+//320x100	                    LARGE_BANNER        
+//300x250	                    MEDIUM_RECTANGLE    (most visible)
+//468x60	                    FULL_BANNER     
+//728x90	                    LEADERBOARD   
 //Screen                            SMART_BANNER        (Popular)
 //Provided width x Adaptive height  ADAPTIVE            (Trending)
 ```
