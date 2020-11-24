@@ -52,34 +52,34 @@ setContentView(ads.showBanner(fl,"ca-app-pub-3940256099942544/6300978111","LEADE
 ```
 FrameLayout fl=new FrameLayout(this);
 setContentView(ads.showBannerPro(fl,"ca-app-pub-3940256099942544/6300978111", "ADAPTIVE", new bannerAdListener() {
-            @Override
-            public void onAdLoaded() {
-                Log.d("xTechLod","onAdLoaded");
-            }
+  @Override
+  public void onAdLoaded() {
+    Log.d("xTechLod","onAdLoaded");
+  }
 
-            @Override
-            public void onAdFailedToLoad(Object adError) {
-                Log.d("xTechLod","onAdFailedToLoad");
-            }
+  @Override
+  public void onAdFailedToLoad(Object adError) {
+    Log.d("xTechLod","onAdFailedToLoad");
+  }
 
-            @Override
-            public void onAdOpened() {
-                Log.d("xTechLod","onAdOpened");
-            }
+  @Override
+  public void onAdOpened() {
+    Log.d("xTechLod","onAdOpened");
+  }
 
-            @Override
-            public void onAdClicked() {
-                Log.d("xTechLod","onAdClicked");
-            }
+  @Override
+  public void onAdClicked() {
+    Log.d("xTechLod","onAdClicked");
+  }
 
-            @Override
-            public void onAdLeftApplication() {
-                Log.d("xTechLod","onAdLeftApplication");
-            }
+  @Override
+  public void onAdLeftApplication() {
+    Log.d("xTechLod","onAdLeftApplication");
+  }
 
-            @Override
-            public void onAdClosed() {
-                Log.d("xTechLod","onAdClosed");
-            }
-        }));
+  @Override
+  public void onAdClosed() {
+    Log.d("xTechLod","onAdClosed");
+  }
+}));
 ```
