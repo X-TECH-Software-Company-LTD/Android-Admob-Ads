@@ -2,12 +2,13 @@
 Integration to various kinds Google Admob Ads
 
 ## Available Methods
-1 - Show Banner (standard)
-2 - Show Banner with Event Listener (advanced)
-3 - Show Interstitial (standard)
-4 - Show Interstitial with Event Listener (advanced)
-5 - Show Rewarded Interstitial (advanced)
-6 - 
+1. Admob Banner (standard)
+2. Admob Banner with Event Listener (advanced)
+3. Admob Interstitial (standard)
+4. Admob Interstitial with Event Listener (advanced)
+5. Admob Rewarded Interstitial (advanced)
+6. Admob Advanced Native (standard)
+7. Admob Advanced Native Customized (advanced)
 
 ## Requirements
 
