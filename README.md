@@ -173,6 +173,7 @@ ads.showNativeAd(fl,"ca-app-pub-3940256099942544/2247696110");
 FrameLayout fl=new FrameLayout(this);
 ads.showNativeAdPro(fl,"ca-app-pub-3940256099942544/2247696110",300,"#FF0000","#000000","#FFFFFF");
 //(FrameLayout,Ad ID, Ad Height , title Color,button Color, button Text Color) colors accept only hex strings 
+// standard Ad Height = 175
 ```
 
 
