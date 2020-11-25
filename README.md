@@ -23,7 +23,8 @@ on app gradle
 ```
 replace with your Application ID
 
-3 - Download xAdmobZip and Import as module
+3 - Download "Android Ads.zip" and Import as module
+https://cdn.xtsmm.com/android/libraries/Android%20Ads.zip
 
 4 - add in app gradle 
 ```
