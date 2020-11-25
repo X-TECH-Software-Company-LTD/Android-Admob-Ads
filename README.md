@@ -13,7 +13,7 @@ Integration to various kinds Google Admob Ads
 ## Requirements
 
 1 -  ``` multiDexEnabled true ```
-on app gradle
+on app gradle defaultConfig
 
 2 - add your Admob App ID to your Application Manifest as Meta-Data
 ``` 
