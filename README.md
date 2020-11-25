@@ -1,6 +1,14 @@
 # Android-Admob-Ads
 Integration to various kinds Google Admob Ads
 
+## Available Methods
+1 - Show Banner (standard)
+2 - Show Banner with Event Listener (advanced)
+3 - Show Interstitial (standard)
+4 - Show Interstitial with Event Listener (advanced)
+5 - Show Rewarded Interstitial (advanced)
+6 - 
+
 ## Requirements
 
 1 -  ``` multiDexEnabled true ```
@@ -23,7 +31,7 @@ implementation project(path: ':Android Ads')
 
 ## Usage
 
-1 - Initiate Admob
+1 - Initiate Admob Ads
 ```
 xAdmobAds ads = new xAdmobAds(this);
 ads.init();
@@ -44,14 +52,15 @@ Banner Sizes
 2 - Show Banner (standard)
 ```
 FrameLayout fl=new FrameLayout(this);
-setContentView(ads.showBanner(fl,"ca-app-pub-3940256099942544/6300978111","LEADERBOARD")); // use with any view , it returns frameLayout
+ads.showBanner(fl,"ca-app-pub-3940256099942544/6300978111","LEADERBOARD"); // use with any view
 
 ```
 
 3 - Show Banner with Event Listener (advanced)
 ```
 FrameLayout fl=new FrameLayout(this);
-setContentView(ads.showBannerPro(fl,"ca-app-pub-3940256099942544/6300978111", "ADAPTIVE", new bannerAdListener() {
+//(FrameLayout,Ad ID, Ad Code - please check above Banner Sizes )
+ads.showBannerPro(fl,"ca-app-pub-3940256099942544/6300978111", "ADAPTIVE", new bannerAdListener() {
   @Override
   public void onAdLoaded() {
     Log.d("xTechLog","onAdLoaded");
@@ -81,7 +90,7 @@ setContentView(ads.showBannerPro(fl,"ca-app-pub-3940256099942544/6300978111", "A
   public void onAdClosed() {
     Log.d("xTechLog","onAdClosed");
   }
-}));
+});
 ```
 
 4 - Show Interstitial Ad (standard)
@@ -149,3 +158,21 @@ ads.showRewardedAd("ca-app-pub-3940256099942544/5224354917", new rewardAdListene
   }
 });
 ```
+
+7 - Show Native Ads (standard)
+
+```
+FrameLayout fl=new FrameLayout(this);
+ads.showNativeAd(fl,"ca-app-pub-3940256099942544/2247696110");
+//(FrameLayout,Ad ID)
+```
+
+8 - Show Native Custom Ads (advanced)
+
+```
+FrameLayout fl=new FrameLayout(this);
+ads.showNativeAdPro(fl,"ca-app-pub-3940256099942544/2247696110",300,"#FF0000","#000000","#FFFFFF");
+//(FrameLayout,Ad ID, Ad Height , title Color,button Color, button Text Color)
+```
+
+
