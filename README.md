@@ -1,4 +1,4 @@
-# Android-Admob-Ads
+b# Android-Admob-Ads
 Integration to various kinds Google Admob Ads
 
 ## Available Methods
@@ -62,7 +62,7 @@ ads.showBanner(fl,"ca-app-pub-3940256099942544/6300978111","LEADERBOARD"); // us
 ```
 FrameLayout fl=new FrameLayout(this);
 //(FrameLayout,Ad ID, Ad Code - please check above Banner Sizes )
-ads.showBannerPro(fl,"ca-app-pub-3940256099942544/6300978111", "ADAPTIVE", new bannerAdListener() {
+ads.showBannerPro(fl,"ca-app-pub-3940256099942544/6300978111", "ADAPTIVE", new adListener() {
   @Override
   public void onAdLoaded() {
     Log.d("xTechLog","onAdLoaded");
