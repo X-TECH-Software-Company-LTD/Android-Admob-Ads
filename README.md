@@ -133,6 +133,7 @@ ads.showIntAdPro("ca-app-pub-3940256099942544/1033173712", new adListener() {
   public void onAdClosed() {
     Log.d("xTechLog","onAdClosed");
   }
+});
 ```
 
 6 - Show Rewarded Ads 
